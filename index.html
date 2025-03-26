@@ -1,133 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afita Bag Collection</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <title>Website Tas Selempang</title>
     <style>
         body {
-            font-family: 'Playfair Display', serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F5F1EB;
-            color: #3D2C1E;
+            background-color: #222;
+            color: #fff;
         }
         header {
-            background-color: #3D2C1E;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        nav {
+            background: url('banner.jpg') no-repeat center/cover;
+            height: 300px;
             display: flex;
             justify-content: center;
-            background: #3D2C1E;
-            padding: 10px 0;
+            align-items: center;
+            font-size: 2em;
+            font-weight: bold;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-            transition: 0.3s;
+        section {
+            padding: 20px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .tas-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        .container {
+        .tas-item {
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            background: #333;
             text-align: center;
-            padding: 50px 20px;
         }
-        .container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .btn {
-            background: #3D2C1E;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #5a3d2b;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-        .card img {
+        .tas-item img {
             width: 100%;
-            border-radius: 10px;
+            height: auto;
         }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .footer {
+        footer {
             text-align: center;
-            padding: 20px;
-            background: #3D2C1E;
-            color: white;
-            margin-top: 40px;
+            padding: 10px;
+            background: #111;
         }
     </style>
 </head>
 <body>
-    <header>Afita Bag Collection</header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#work">Work</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <h1>Let me capture the beauty of your story.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <img src="banner.jpg" alt="Main Banner">
-        <a href="#contact" class="btn">Contact</a>
-    </div>
-    <div class="container">
-        <h2>Stay inspired. Never stop creating.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </div>
-    <div class="grid">
-        <div class="card">
-            <img src="tas1.jpg" alt="Stylish Backpack">
-            <h3>Stylish Backpack</h3>
-            <p>Perfect for daily use and travel.</p>
+    <header>Website Tas Selempang</header>
+    
+    <section id="work">
+        <h2>Work</h2>
+        <p>Kami telah menyelesaikan lebih dari 100 proyek dan bekerja sama dengan lebih dari 20 brand ternama.</p>
+    </section>
+    
+    <section id="tas">
+        <h2>Produk Kami</h2>
+        <div class="tas-container">
+            <div class="tas-item">
+                <img src="tas1.jpg" alt="Tas Selempang 1">
+                <p>Tas Selempang Premium</p>
+            </div>
+            <div class="tas-item">
+                <img src="tas2.jpg" alt="Tas Selempang 2">
+                <p>Tas Selempang Kasual</p>
+            </div>
+            <div class="tas-item">
+                <img src="tas3.jpg" alt="Tas Selempang 3">
+                <p>Tas Selempang Stylish</p>
+            </div>
         </div>
-        <div class="card">
-            <img src="tas2.jpg" alt="Elegant Sling Bag">
-            <h3>Elegant Sling Bag</h3>
-            <p>Minimalist design, maximum style.</p>
-        </div>
-        <div class="card">
-            <img src="tas3.jpg" alt="Classic Messenger Bag">
-            <h3>Classic Messenger Bag</h3>
-            <p>Timeless and functional for work or leisure.</p>
-        </div>
-    </div>
-    <div class="footer">
-        &copy; 2025 Afita Bag Collection | www.reallygreatsite.com
-    </div>
+    </section>
+    
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Berbagai artikel menarik tentang fashion dan gaya hidup.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut.</p>
+    </section>
+    
+    <footer>
+        &copy; 2025 Tas Selempang - All Rights Reserved
+    </footer>
 </body>
 </html>
